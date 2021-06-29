@@ -6,11 +6,18 @@ Using regex I first fetched all the mirror links from debian then for every link
 
 ## Installation
 
-Clone the repo and build
+If you have go on your machine just clone the repo and build :
 
 ```bash
 go build -o mirror-api .
 ./mirror-api
+```
+
+or you can use the Dockerfile to create an image to spawn the container from :
+
+```bash
+docker build -t mirror-api .
+docker run -d --name mirror-api -p 8080:8080 mirror-api:latest
 ```
 
 ## Usage
