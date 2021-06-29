@@ -17,7 +17,7 @@ go build -o mirror-api .
 or you can use the Dockerfile to create an image to spawn the container from :
 
 ```bash
-docker build -t mirror-api .
+docker build -t mirror-api:latest .
 docker run -d --name mirror-api -p 8080:8080 mirror-api:latest
 ```
 
